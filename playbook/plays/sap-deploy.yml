@@ -1,0 +1,9 @@
+- hosts: hana
+  connection: local
+  roles:
+    - { role: sap_hostagent }
+    - { role: sap-preconfigure }
+    - { role: sap-hana-preconfigure }
+    - { role: sap_hana_deployment }
+    - { role: sap-netweaver-preconfigure }
+    - { role: sap_s4hana_deployment }

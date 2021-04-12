@@ -1,0 +1,55 @@
+## Variables required for `sap_hostagent` role
+sap_hostagent_installation_type: "rpm"
+sap_hostagent_rpm_remote_path: "/software/SAPHOSTAGENT"
+sap_hostagent_rpm_file_name: "saphostagentrpm_44-20009394.rpm"
+
+## Variables reqiured for `sap_preconfigure` role
+sap_preconfigure_modify_etc_hosts: true
+sap_domain: "<remote_host_domain>"
+
+## Variables required for 'sap_hana_deployment' role
+sap_hana_deployment_bundle_path: /software/HANA_installation
+sap_hana_deployment_bundle_sar_file_name: IMDB_SERVER20_048_5-80002031.SAR
+sap_hana_deployment_sapcar_path: /software/SAPCAR
+sap_hana_deployment_sapcar_file_name: SAPCAR_1010-70006178.EXE
+sap_hana_deployment_root_password: "Psswd123."
+sap_hana_deployment_sapadm_password: "Psswd123."
+sap_hana_deployment_hana_sid: RH1
+sap_hana_deployment_hana_instance_number: "00"
+sap_hana_deployment_hana_env_type: development
+sap_hana_deployment_hana_mem_restrict: "n"
+sap_hana_deployment_common_master_password: "Psswd123."
+sap_hana_deployment_sidadm_password: "Psswd123."
+sap_hana_deployment_hana_db_system_password: "Psswd123."
+sap_hana_deployment_ase_user_password: "Psswd123."
+sap_hana_deployment_apply_license: false
+sap_hana_installdir: /software/sap_install
+
+## Variables required for 'sap_s4hana_deployment' role
+sap_s4hana_deployment_product_id: "NW_ABAP_OneHost:S4HANA1909.CORE.HDB.ABAP"
+sap_s4hana_deployment_sapcar_path: "/software/SAPCAR"
+sap_s4hana_deployment_sapcar_file_name: "SAPCAR_1010-70006178.EXE"
+sap_s4hana_deployment_swpm_path: "/software/S4HANA_installation"
+sap_s4hana_deployment_swpm_sar_file_name: "SWPM20SP08_3-80003424.SAR"
+sap_s4hana_deployment_db_schema_password: "Psswd123."
+sap_s4hana_deployment_db_schema_abap_password: "Psswd123."
+sap_s4hana_deployment_master_password: "Psswd_Psswd123"
+sap_s4hana_deployment_hana_systemdb_password: "Psswd123."
+sap_s4hana_deployment_sid: "RHE"
+sap_s4hana_deployment_db_host: "localhost"
+sap_s4hana_deployment_db_sid: RH1
+sap_s4hana_deployment_hana_instance_nr: "00"
+sap_s4hana_deployment_hana_system_password: "Psswd123."
+sap_s4hana_deployment_parallel_jobs_nr: "30"
+sap_s4hana_deployment_db_sidadm_password: "Psswd123."
+sap_s4hana_deployment_igs_path: "/software/S4HANA_installation"
+sap_s4hana_deployment_igs_file_name: "igsexe_9-80003187.sar"
+sap_s4hana_deployment_igs_helper_path: "/software/S4HANA_installation"
+sap_s4hana_deployment_igs_helper_file_name: "igshelper_17-10010245.sar"
+sap_s4hana_deployment_kernel_dependent_path: "/software/S4HANA_installation"
+sap_s4hana_deployment_kernel_dependent_file_name: "SAPEXEDB_300-80004392.SAR"
+sap_s4hana_deployment_kernel_independent_path: "/software/S4HANA_installation"
+sap_s4hana_deployment_kernel_independent_file_name: "SAPEXE_300-80004393.SAR"
+sap_s4hana_deployment_software_path: "/software/S4HANA_installation"
+sap_s4hana_deployment_sapadm_password: "Psswd123."
+sap_s4hana_deployment_sap_sidadm_password: "Psswd123."
